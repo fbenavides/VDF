@@ -1,0 +1,40 @@
+{
+	"scope": "source",
+
+	"completions":
+	[
+	        { "trigger": "Key_Alt", "contents": "Key_alt" },
+	        { "trigger": "Key_A", "contents": "Key_A " },
+	        { "trigger": "Key_B", "contents": "Key_B " },
+	        { "trigger": "Key_C", "contents": "Key_C " },
+	        { "trigger": "Key_D", "contents": "Key_D " },
+	        { "trigger": "Key_E", "contents": "Key_E " },
+	        { "trigger": "Key_F", "contents": "Key_F " },
+	        { "trigger": "Key_G", "contents": "Key_G " },
+	        { "trigger": "Key_H", "contents": "Key_H " },
+	        { "trigger": "Key_I", "contents": "Key_I " },
+	        { "trigger": "Key_J", "contents": "Key_J " },
+	        { "trigger": "Key_K", "contents": "Key_K " },
+	        { "trigger": "Key_L", "contents": "Key_L " },
+	        { "trigger": "Key_M", "contents": "Key_M " },
+	        { "trigger": "Key_N", "contents": "Key_N " },
+	        { "trigger": "Key_O", "contents": "Key_O " },
+	        { "trigger": "Key_P", "contents": "Key_P " },
+	        { "trigger": "Key_Q", "contents": "Key_Q " },
+	        { "trigger": "Key_R", "contents": "Key_R " },
+	        { "trigger": "Key_S", "contents": "Key_S " },
+	        { "trigger": "Key_T", "contents": "Key_T " },
+	        { "trigger": "Key_U", "contents": "Key_U " },
+	        { "trigger": "Key_V", "contents": "Key_V " },
+	        { "trigger": "Key_W", "contents": "Key_W " },
+	        { "trigger": "Key_X", "contents": "Key_X " },
+	        { "trigger": "Key_Y", "contents": "Key_Y " },
+	        { "trigger": "Key_Z", "contents": "Key_Z " },
+
+	        { "trigger": "On_Key", "contents": "On_Key $1 Send $2" },
+	        { "trigger": "Move", "contents": "Move $1 to $2" },
+	        { "trigger": "Showln", "contents": "Showln $1" }
+
+
+	]
+}

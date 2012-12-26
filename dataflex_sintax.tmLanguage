@@ -7,6 +7,7 @@
 		<string>vw</string>
 		<string>rv</string>
 		<string>sl</string>
+		<string>dg</string>
 	</array>
 	<key>name</key>
 	<string>VDF</string>
@@ -68,13 +69,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found)\b</string>
+			<string>\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key)\b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_all|End_For_all|Deferred_View)\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(False|True|Self)\b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
@@ -92,7 +99,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(for|is|a|to|not|do|continue)\b</string>
+			<string>\b(for|is|a|to|not|do|continue|rgb|of)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
