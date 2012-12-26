@@ -1,109 +1,63 @@
 { "name": "VDF",
   "scopeName": "source.vdf",
-  "fileTypes": [""],
+  "fileTypes": [
+        "vw", 
+        "rv",
+        "sl"
+    ], 
   "patterns": [
-    {
-      "comment" : "Main regex for language markup",
-      "match" : "^\\s*\"(.*)\"\\s*(=)\\s*\"(.*)\"\\s*;",
-      "captures": {
-          "1": { "name": "string.strings" },
-          "3": { "name": "string.strings" }
-      }
-    },
-    { "match" : "^(//.*)",
+
+    { "match" : "(//.*)",
       "name": "comment.line.double-slash"},
-    { "match": "Object ",
-      "name": "entity.name.function" },
-    { "match": "End_Object",
-      "name": "entity.name.function" },
-    { "match": "Procedure",
-      "name": "entity.name.function" },
-    { "match": "Procedure_Return",
-      "name": "entity.name.function" },  
-    { "match": "Forward",
-      "name": "entity.name.function" },
-    { "match": "End_Procedure",
-      "name": "entity.name.function" },
-    { "match": "Function",
-      "name": "entity.name.function" },
-    { "match": "Function_Return",
-      "name": "entity.name.function" },
-    { "match": "End_Function",
-      "name": "entity.name.function" },
-    { "match": "Begin",
-      "name": "entity.name.function" },
-    { "match": "begin",
-      "name": "entity.name.function" },  
-    { "match": "End",
-      "name": "entity.name.function" },
-    { "match": "While",
-      "name": "entity.name.function" },
-    { "match": "Repeat",
-      "name": "entity.name.function" },
-    { "match": "Loop",
-      "name": "entity.name.function" },
-    { "match": "If",
-      "name": "entity.name.function" },
-    { "match": "if",
-      "name": "entity.name.function" },  
-    { "match": "Else",
-      "name": "entity.name.function" },
-    { "match": "For_all",
-      "name": "entity.name.function" },
-    { "match": "End_For_all",
-      "name": "entity.name.function" },
-    { "match": "Struct",
-      "name": "entity.name.function" },
-    { "match": "End_Struct",
-      "name": "entity.name.function" },
-
-    { "match": "Number",
-      "name": "storage.type" },
-    { "match": "Integer",
-      "name": "storage.type" },
-    { "match": "String",
-      "name": "storage.type" },
-    { "match": "Boolean",
-      "name": "storage.type" },
-    { "match": "Date",
-      "name": "storage.type" },
-
-    { "match": "Use",
-      "name": "constant.language" },
-    { "match": "Send",
-      "name": "constant.language" },
-    { "match": "Sysdate",
-      "name": "constant.language" },
-    { "match": "Get",
-      "name": "constant.language" },
-    { "match": "Set",
-      "name": "constant.language" },
-    { "match": "Index",
-      "name": "constant.language" },
-    { "match": "index",
-      "name": "constant.language" },  
-    { "match": "Clear",
-      "name": "constant.language" },
-    { "match": "Find",
-      "name": "constant.language" },
-    { "match": "Move",
-      "name": "constant.language" },
-    { "match": "move",
-      "name": "constant.language" },
-    { "match": "Showln",
-      "name": "constant.language" },
-    { "match": "showln",
-      "name": "constant.language" },
-    { "match": "found",
-      "name": "constant.language" },
-    { "match": "Found",
-      "name": "constant.language" },
-    { "match": "not",
-      "name": "constant.language" },
-
     { "match": "'.*'",
-      "name": "string.quoted.single" }
-  	
+      "name": "string.quoted.single" },
+    {
+      "begin": "\"", 
+      "beginCaptures": {
+          "0": {
+              "name": "punctuation.definition.string.begin"
+          }
+      }, 
+      "end": "\"", 
+      "endCaptures": {
+          "0": {
+              "name": "punctuation.definition.string.end"
+          }
+      }, 
+      "name": "string.quoted.double"
+    } ,
+    {
+        "match": "\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)([LlFfUuDd]|UL|ul)?\\b", 
+        "name": "constant.numeric"
+    },
+
+
+
+    { "match": "\\b(Object|End_Object|Procedure|End_Procedure|Function|End_Function|Struct|End_Struct)\\b", 
+      "name": "entity.name.function"
+    },
+
+    { "match": "\\b(Number|Integer|String|Boolean|Date)\\b", 
+      "name": "storage.type"
+    },
+
+    { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found)\\b", 
+      "name": "constant.language"
+    },
+    { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_all|End_For_all|Deferred_View)\\b", 
+      "name": "constant.language"
+    },
+
+    { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=)\\b", 
+      "name": "keyword.operator.comparison"
+    },
+    { "match": "(\\-|\\+|\\*|\\/|%)", 
+      "name": "keyword.operator.arithmetic"
+    },
+    { "match": "\\b(for|is|a|to|not|do|continue)\\b", 
+      "name": "keyword.control"
+    }
+
       
   ],
   "uuid": "ef4d85e8-a2aa-4c09-b7fc-c2683ea10d81"

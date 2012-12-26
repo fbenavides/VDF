@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+Integer eResponse
+Move (YesNo_Box("¿${1:pregunta}?", "", MB_DEFBUTTON2)) to eResponse
+If (eResponse = MBR_YES) Begin
+	${2}
+End
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>msgyn</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
