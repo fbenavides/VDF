@@ -87,6 +87,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b(Write|Writeln)\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(eq|ge|gt|le|=|&lt;|&gt;|ne|&lt;&gt;|&gt;=|&lt;=)\b</string>
 			<key>name</key>
 			<string>keyword.operator.comparison</string>

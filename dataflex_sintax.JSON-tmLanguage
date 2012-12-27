@@ -51,6 +51,9 @@
     { "match": "\\b(False|True|Self)\\b", 
       "name": "constant.language"
     },
+    { "match": "\\b(Write|Writeln)\\b", 
+      "name": "constant.language"
+    },
 
     { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=)\\b", 
       "name": "keyword.operator.comparison"
