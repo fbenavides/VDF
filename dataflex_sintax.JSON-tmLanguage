@@ -34,7 +34,10 @@
 
 
 
-    { "match": "\\b(Object|End_Object|Procedure|End_Procedure|Function|End_Function|Struct|End_Struct)\\b", 
+    { "match": "\\b(Procedure|End_Procedure|Function|End_Function|Struct|End_Struct|Begin_Row|End_Row)\\b", 
+      "name": "entity.name.function"
+    },
+    { "match": "\\b(Object|End_Object|Cd_End_Object)\\b", 
       "name": "entity.name.function"
     },
 
@@ -42,7 +45,7 @@
       "name": "storage.type"
     },
 
-    { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key)\\b", 
+    { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item)\\b", 
       "name": "constant.language"
     },
     { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_all|End_For_all|Deferred_View)\\b", 
@@ -51,11 +54,11 @@
     { "match": "\\b(False|True|Self)\\b", 
       "name": "constant.language"
     },
-    { "match": "\\b(Write|Writeln)\\b", 
+    { "match": "\\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\\b", 
       "name": "constant.language"
     },
 
-    { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=)\\b", 
+    { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=|and)\\b", 
       "name": "keyword.operator.comparison"
     },
     { "match": "(\\-|\\+|\\*|\\/|%)", 

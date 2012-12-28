@@ -30,10 +30,13 @@
 	        { "trigger": "Key_X", "contents": "Key_X " },
 	        { "trigger": "Key_Y", "contents": "Key_Y " },
 	        { "trigger": "Key_Z", "contents": "Key_Z " },
+			{ "trigger": "On_Key", "contents": "On_Key" },
+	        { "trigger": "Move"  , "contents": "Move" },
+	        { "trigger": "Showln", "contents": "Showln" },
+			{ "trigger": "Increment", "contents": "Increment" }
+			
+			
 
-	        { "trigger": "On_Key", "contents": "On_Key $1 Send $2" },
-	        { "trigger": "Move", "contents": "Move $1 to $2" },
-	        { "trigger": "Showln", "contents": "Showln $1" }
 
 
 	]

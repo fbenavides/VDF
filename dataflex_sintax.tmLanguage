@@ -57,7 +57,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Object|End_Object|Procedure|End_Procedure|Function|End_Function|Struct|End_Struct)\b</string>
+			<string>\b(Procedure|End_Procedure|Function|End_Function|Struct|End_Struct|Begin_Row|End_Row)\b</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Object|End_Object|Cd_End_Object)\b</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
@@ -69,7 +75,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key)\b</string>
+			<string>\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item)\b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
@@ -87,13 +93,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Write|Writeln)\b</string>
+			<string>\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(eq|ge|gt|le|=|&lt;|&gt;|ne|&lt;&gt;|&gt;=|&lt;=)\b</string>
+			<string>\b(eq|ge|gt|le|=|&lt;|&gt;|ne|&lt;&gt;|&gt;=|&lt;=|and)\b</string>
 			<key>name</key>
 			<string>keyword.operator.comparison</string>
 		</dict>
