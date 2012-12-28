@@ -57,21 +57,57 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Procedure|End_Procedure|Function|End_Function|Struct|End_Struct|Begin_Row|End_Row)\b</string>
+			<string>(\bObject\b(.*)\b)</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Object|End_Object|Cd_End_Object)\b</string>
+			<string>(\bProcedure\b(.*)\b)</string>
 			<key>name</key>
 			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\bFunction\b(.*)\b)</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\bEnd_Object\b)</string>
+			<key>name</key>
+			<string>entity.name.tag</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\bEnd_Procedure\b)</string>
+			<key>name</key>
+			<string>entity.name.tag</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\bEnd_Function\b)</string>
+			<key>name</key>
+			<string>entity.name.tag</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(Number|Integer|String|Boolean|Date)\b</string>
 			<key>name</key>
 			<string>storage.type</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Struct|End_Struct|Begin_Row|End_Row)\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Case|Constrain|Property)\b</string>
+			<key>name</key>
+			<string>constant.language</string>
 		</dict>
 		<dict>
 			<key>match</key>
