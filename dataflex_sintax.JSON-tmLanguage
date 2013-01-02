@@ -83,7 +83,7 @@
     { "match": "\\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\\b", 
       "name": "constant.language"
     },
-    { "match": "\\b(SaveRecord|Unlock|Reread)\\b", 
+    { "match": "\\b(SaveRecord|Unlock|Reread|Repeat)\\b", 
       "name": "constant.language"
     },
 

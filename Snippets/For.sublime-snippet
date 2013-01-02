@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+For i from 0 to ${1:Until}
+	$2
+Loop
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>for</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

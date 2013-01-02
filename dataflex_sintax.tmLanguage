@@ -147,7 +147,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(SaveRecord|Unlock|Reread)\b</string>
+			<string>\b(SaveRecord|Unlock|Reread|Repeat)\b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
