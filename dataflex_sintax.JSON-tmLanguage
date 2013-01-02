@@ -10,6 +10,10 @@
 
     { "match" : "(//.*)",
       "name": "comment.line.double-slash"},
+    { "match": "\\(",
+      "name": "string.unquoted" },
+    { "match": "\\)",
+      "name": "string.unquoted" },
     { "match": "'.*'",
       "name": "string.quoted.single" },
     {
@@ -70,13 +74,16 @@
     { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item)\\b", 
       "name": "constant.language"
     },
-    { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_all|End_For_all|Deferred_View)\\b", 
+    { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View)\\b", 
       "name": "constant.language"
     },
     { "match": "\\b(False|True|Self)\\b", 
       "name": "constant.language"
     },
     { "match": "\\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\\b", 
+      "name": "constant.language"
+    },
+    { "match": "\\b(SaveRecord|Unlock|Reread)\\b", 
       "name": "constant.language"
     },
 

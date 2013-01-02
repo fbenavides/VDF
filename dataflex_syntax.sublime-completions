@@ -33,7 +33,20 @@
 			{ "trigger": "On_Key", "contents": "On_Key" },
 	        { "trigger": "Move"  , "contents": "Move" },
 	        { "trigger": "Showln", "contents": "Showln" },
-			{ "trigger": "Increment", "contents": "Increment" }
+	        { "trigger": "For_All", "contents": "For_All" },
+	        { "trigger": "End_For_All", "contents": "End_For_All" },
+	        { "trigger": "Index", "contents": "Index" },
+	        { "trigger": "SaveRecord", "contents": "SaveRecord" },
+	        { "trigger": "Reread", "contents": "Reread" },
+	        { "trigger": "Unlock", "contents": "Unlock" },
+	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "eq", "contents": "eq" },
+	        { "trigger": "gt", "contents": "gt" },
+	        { "trigger": "ge", "contents": "ge" },
+	        { "trigger": "lt", "contents": "lt" },
+	        { "trigger": "le", "contents": "le" },
+	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "Increment", "contents": "Increment" }
 			
 			
 

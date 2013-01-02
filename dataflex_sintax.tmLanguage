@@ -21,6 +21,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\(</string>
+			<key>name</key>
+			<string>string.unquoted</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>string.unquoted</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>'.*'</string>
 			<key>name</key>
 			<string>string.quoted.single</string>
@@ -117,7 +129,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_all|End_For_all|Deferred_View)\b</string>
+			<string>\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View)\b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
@@ -130,6 +142,12 @@
 		<dict>
 			<key>match</key>
 			<string>\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(SaveRecord|Unlock|Reread)\b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
