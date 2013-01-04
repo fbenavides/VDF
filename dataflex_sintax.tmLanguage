@@ -87,7 +87,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(\bEnd_Object\b)</string>
+			<string>(\bEnd_Object|Cd_End_Object\b)</string>
 			<key>name</key>
 			<string>entity.name.tag</string>
 		</dict>
@@ -113,43 +113,43 @@
 			<key>match</key>
 			<string>\b(Struct|End_Struct|Begin_Row|End_Row)\b</string>
 			<key>name</key>
-			<string>constant.language</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(Case|Constrain|Property)\b</string>
 			<key>name</key>
-			<string>constant.language</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item)\b</string>
 			<key>name</key>
-			<string>constant.language</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View)\b</string>
 			<key>name</key>
-			<string>constant.language</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(False|True|Self)\b</string>
 			<key>name</key>
-			<string>constant.language</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\b</string>
 			<key>name</key>
-			<string>constant.language</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(SaveRecord|Unlock|Reread|Repeat)\b</string>
 			<key>name</key>
-			<string>constant.language</string>
+			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -168,6 +168,24 @@
 			<string>\b(for|is|a|to|not|do|continue|rgb|of)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b.*\.dd\b|\b.*\.DD\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b.*\.pkg\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bActivate.* \b</string>
+			<key>name</key>
+			<string>constant.language</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

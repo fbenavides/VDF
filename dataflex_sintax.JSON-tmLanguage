@@ -49,7 +49,7 @@
       "name": "entity.name.function"
     },
 
-    { "match": "(\\bEnd_Object\\b)", 
+    { "match": "(\\bEnd_Object|Cd_End_Object\\b)", 
       "name": "entity.name.tag"
     },
 
@@ -66,25 +66,25 @@
     },
 
     { "match": "\\b(Struct|End_Struct|Begin_Row|End_Row)\\b", 
-      "name": "constant.language"
+      "name": "support.function"
     },
     { "match": "\\b(Case|Constrain|Property)\\b", 
-      "name": "constant.language"
+      "name": "support.function"
     },
     { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item)\\b", 
-      "name": "constant.language"
+      "name": "support.function"
     },
     { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View)\\b", 
-      "name": "constant.language"
+      "name": "support.function"
     },
     { "match": "\\b(False|True|Self)\\b", 
-      "name": "constant.language"
+      "name": "support.function"
     },
     { "match": "\\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\\b", 
-      "name": "constant.language"
+      "name": "support.function"
     },
     { "match": "\\b(SaveRecord|Unlock|Reread|Repeat)\\b", 
-      "name": "constant.language"
+      "name": "support.function"
     },
 
     { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=|and)\\b", 
@@ -95,10 +95,17 @@
     },
     { "match": "\\b(for|is|a|to|not|do|continue|rgb|of)\\b", 
       "name": "keyword.control"
+    },
+    { "match": "\\b.*\\.dd\\b|\\b.*\\.DD\\b", 
+      "name": "constant.language"
+    },
+    { "match": "\\b.*\\.pkg\\b", 
+      "name": "constant.language"
+    },
+    { "match": "\\bActivate.* \\b", 
+      "name": "constant.language"
     }
-    
-
-      
+          
   ],
   "uuid": "ef4d85e8-a2aa-4c09-b7fc-c2683ea10d81"
 }
