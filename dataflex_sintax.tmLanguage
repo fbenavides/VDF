@@ -8,6 +8,8 @@
 		<string>rv</string>
 		<string>sl</string>
 		<string>dg</string>
+		<string>src</string>
+		<string>dd</string>
 	</array>
 	<key>name</key>
 	<string>VDF</string>
@@ -111,7 +113,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Struct|End_Struct|Begin_Row|End_Row)\b</string>
+			<string>\b(Struct|End_Struct|Begin_Row|End_Row|Enumeration_List|End_Enumeration_List)\b</string>
 			<key>name</key>
 			<string>support.function</string>
 		</dict>
@@ -141,7 +143,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\b</string>
+			<string>\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering|Define)\b</string>
 			<key>name</key>
 			<string>support.function</string>
 		</dict>
@@ -178,12 +180,6 @@
 		<dict>
 			<key>match</key>
 			<string>\b.*\.pkg\b</string>
-			<key>name</key>
-			<string>constant.language</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\bActivate.* \b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
