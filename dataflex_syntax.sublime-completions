@@ -47,16 +47,20 @@
 	        { "trigger": "If", "contents": "If" },
 	        { "trigger": "Function", "contents": "Function" },
 	        { "trigger": "Return", "contents": "Return" },
-	        { "trigger": "comodin", "contents": "comodin" },
-	        { "trigger": "comodin", "contents": "comodin" },
-	        { "trigger": "comodin", "contents": "comodin" },
-	        { "trigger": "comodin", "contents": "comodin" },
-	        { "trigger": "comodin", "contents": "comodin" },
-	        { "trigger": "comodin", "contents": "comodin" },
-	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "False", "contents": "False" },
+	        { "trigger": "True", "contents": "True" },
+	        { "trigger": "and", "contents": "and" },
+	        { "trigger": "or", "contents": "or" },
 	        { "trigger": "For", "contents": "For" },
 	        { "trigger": "Repeat", "contents": "Repeat" },
-	        { "trigger": "Increment", "contents": "Increment" }
+	        { "trigger": "Increment", "contents": "Increment" },
+	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "comodin", "contents": "comodin" },
+	        { "trigger": "comodin", "contents": "comodin" }
 			
 			
 

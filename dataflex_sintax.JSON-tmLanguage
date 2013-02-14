@@ -4,7 +4,9 @@
         "vw", 
         "rv",
         "sl",
-        "dg"
+        "dg",
+        "src",
+        "dd"
     ], 
   "patterns": [
 
@@ -76,39 +78,39 @@
       "name": "entity.name.tag"
     },
 
-    { "match": "\\b(Number|Integer|String|Boolean|Date)\\b", 
+    { "match": "\\b(Number|Integer|String|Boolean|Date|Handle)\\b", 
       "name": "storage.type"
     },
 
-    { "match": "\\b(Struct|End_Struct|Begin_Row|End_Row)\\b", 
+    { "match": "\\b(Struct|End_Struct|Begin_Row|End_Row|Enumeration_List|End_Enumeration_List)\\b", 
       "name": "support.function"
     },
     { "match": "\\b(Case|Constrain|Property)\\b", 
       "name": "support.function"
     },
-    { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item)\\b", 
+    { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item|Add)\\b", 
       "name": "support.function"
     },
-    { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View)\\b", 
+    { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View|Until)\\b", 
       "name": "support.function"
     },
     { "match": "\\b(False|True|Self)\\b", 
       "name": "support.function"
     },
-    { "match": "\\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering)\\b", 
+    { "match": "\\b(Write|Writeln|Left|Right|Mid|For|Runprogram|shell|Close_Output|Direct_Output|Ordering|Define)\\b", 
       "name": "support.function"
     },
     { "match": "\\b(SaveRecord|Unlock|Reread|Repeat)\\b", 
       "name": "support.function"
     },
 
-    { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=|and)\\b", 
+    { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=|and|or|lt)\\b", 
       "name": "keyword.operator.comparison"
     },
     { "match": "(\\-|\\+|\\*|\\/|%)", 
       "name": "keyword.operator.arithmetic"
     },
-    { "match": "\\b(for|is|a|to|not|do|continue|rgb|of)\\b", 
+    { "match": "\\b(for|is|a|to|not|do|continue|rgb|of|by|from)\\b", 
       "name": "keyword.control"
     },
     { "match": "\\b.*\\.dd\\b|\\b.*\\.DD\\b", 
@@ -116,11 +118,9 @@
     },
     { "match": "\\b.*\\.pkg\\b", 
       "name": "constant.language"
-    },
-    { "match": "\\bActivate.* \\b", 
-      "name": "constant.language"
     }
-          
+
+
   ],
   "uuid": "ef4d85e8-a2aa-4c09-b7fc-c2683ea10d81"
 }
