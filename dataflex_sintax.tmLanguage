@@ -107,7 +107,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Number|Integer|String|Boolean|Date)\b</string>
+			<string>\b(Number|Integer|String|Boolean|Date|Handle)\b</string>
 			<key>name</key>
 			<string>storage.type</string>
 		</dict>
@@ -125,13 +125,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item)\b</string>
+			<string>\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item|Add)\b</string>
 			<key>name</key>
 			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View)\b</string>
+			<string>\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View|Until)\b</string>
 			<key>name</key>
 			<string>support.function</string>
 		</dict>
@@ -155,7 +155,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(eq|ge|gt|le|=|&lt;|&gt;|ne|&lt;&gt;|&gt;=|&lt;=|and)\b</string>
+			<string>\b(eq|ge|gt|le|=|&lt;|&gt;|ne|&lt;&gt;|&gt;=|&lt;=|and|or|lt)\b</string>
 			<key>name</key>
 			<string>keyword.operator.comparison</string>
 		</dict>
@@ -167,7 +167,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(for|is|a|to|not|do|continue|rgb|of)\b</string>
+			<string>\b(for|is|a|to|not|do|continue|rgb|of|by|from)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>

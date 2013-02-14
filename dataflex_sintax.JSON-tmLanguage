@@ -63,7 +63,7 @@
       "name": "entity.name.tag"
     },
 
-    { "match": "\\b(Number|Integer|String|Boolean|Date)\\b", 
+    { "match": "\\b(Number|Integer|String|Boolean|Date|Handle)\\b", 
       "name": "storage.type"
     },
 
@@ -73,10 +73,10 @@
     { "match": "\\b(Case|Constrain|Property)\\b", 
       "name": "support.function"
     },
-    { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item)\\b", 
+    { "match": "\\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item|Add)\\b", 
       "name": "support.function"
     },
-    { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View)\\b", 
+    { "match": "\\b(Procedure_Return|Forward|Function_Return|Begin|End|While|Repeat|Loop|If|Else|For_All|End_For_All|Deferred_View|Until)\\b", 
       "name": "support.function"
     },
     { "match": "\\b(False|True|Self)\\b", 
@@ -89,13 +89,13 @@
       "name": "support.function"
     },
 
-    { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=|and)\\b", 
+    { "match": "\\b(eq|ge|gt|le|=|<|>|ne|<>|>=|<=|and|or|lt)\\b", 
       "name": "keyword.operator.comparison"
     },
     { "match": "(\\-|\\+|\\*|\\/|%)", 
       "name": "keyword.operator.arithmetic"
     },
-    { "match": "\\b(for|is|a|to|not|do|continue|rgb|of)\\b", 
+    { "match": "\\b(for|is|a|to|not|do|continue|rgb|of|by|from)\\b", 
       "name": "keyword.control"
     },
     { "match": "\\b.*\\.dd\\b|\\b.*\\.DD\\b", 
