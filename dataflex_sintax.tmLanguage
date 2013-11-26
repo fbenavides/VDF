@@ -10,6 +10,8 @@
 		<string>dg</string>
 		<string>src</string>
 		<string>dd</string>
+		<string>pkg</string>
+		<string>wo</string>
 	</array>
 	<key>name</key>
 	<string>VDF</string>
@@ -30,6 +32,18 @@
 		<dict>
 			<key>match</key>
 			<string>\)</string>
+			<key>name</key>
+			<string>string.unquoted</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\{</string>
+			<key>name</key>
+			<string>string.unquoted</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\}</string>
 			<key>name</key>
 			<string>string.unquoted</string>
 		</dict>
@@ -125,7 +139,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Use|Send|Sysdate|Get|Set|Index|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item|Add)\b</string>
+			<string>\b(Use|Send|Sysdate|Get|Set|Index|Open|Clear|Find|Move|Showln|Found|On_Key|Increment|Entry_Item|Add)\b</string>
 			<key>name</key>
 			<string>support.function</string>
 		</dict>
@@ -161,7 +175,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(\-|\+|\*|\/|%)</string>
+			<string>(\-|\+|\*|\/|%|\=)</string>
 			<key>name</key>
 			<string>keyword.operator.arithmetic</string>
 		</dict>
