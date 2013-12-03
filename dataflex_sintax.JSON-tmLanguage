@@ -126,6 +126,12 @@
     },
     { "match": "\\b.*\\.pkg\\b", 
       "name": "constant.language"
+    },
+    { "match": "\\b.*\\.sl\\b", 
+      "name": "constant.language"
+    },
+    { "match": "\\b.*\\.dg\\b", 
+      "name": "constant.language"
     }
 
 

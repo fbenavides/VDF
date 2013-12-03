@@ -197,6 +197,18 @@
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b.*\.sl\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b.*\.dg\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.vdf</string>

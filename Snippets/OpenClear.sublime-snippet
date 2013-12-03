@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+Open ${1:tabla}
+Clear $1
+Move ${2:Variable} to $1.${4:campo}
+Find eq $1 by Index.${3:Index}
+If (Found) Begin
+	$5
+End
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ope</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.vdf</scope>
+</snippet>
